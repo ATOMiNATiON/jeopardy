@@ -1,0 +1,85 @@
+%-------------------------------------------
+% Adam Wu
+% 2023 December 21
+% main.tex
+%-------------------------------------------
+
+\newcommand{\NAME}{Adam Wu}
+\newcommand{\ASSIGNMENT}{Jeopardy}
+\newcommand{\CLASS}{2023 December 22}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{underscore}
+\usepackage{subcaption}
+\usepackage{fancyvrb}
+
+% My own package for better subsection
+\usepackage{titlesec}
+
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{\ASSIGNMENT}
+\author{\NAME}
+\date{\CLASS}
+
+\begin{document}
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyhead{}
+\fancyfoot[L]{\ASSIGNMENT\ -- \CLASS\ -- \NAME}
+\fancyfoot[R]{\thepage}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Purpose}
+
+Most people know about Jeopardy from game shows on T.V. and it has been brought to use in schools for education purposes. As a teacher and a tutor, I am deciding to create a Jeopardy game using javascript, html, and css so that I can utilize this in class for a review session. 
+
+\section{How to Use the Program}
+
+First clone this repository and then open the \textbf{jeopardy.html} file, it should open it on your default browser. Just make sure not to delete the files that you cloned from the repository, as they are necessary for the website to look and work as is.
+
+\section{Program Design}
+
+The board with be a 4 by 6 board. The first row starts with 100 points, and the ones after it will increment by 100. Each of the numbers are just buttons that users may click, which will later trigger some javascript code to ask the question and wait for the client's response. If it is correct, then the screen will either show correct, or incorrect and update the score. Furthermore, it will update the button to be blacked out or some sort to notify the user that the question is unavailable.
+
+\subsection{Data Structures}
+
+Currently no idea for its data structure.
+
+\subsection{Algorithms}
+
+Currently no idea for its data structure.
+
+
+\subsection{Function Descriptions}
+
+
+\section{Results}
+
+
+\subsection{Error Handling}
+
+%%%%%%% img section %%%%%%%%%%%%%%%%
+
+
+% Any references in your report appear at
+% the end of the document automatically.
+\bibliographystyle{unsrt}
+%\bibliography{bibtex}
+\end{document}
