@@ -24,7 +24,7 @@ body {
     justify-content: center; /* Center the grid horizontally */
 }
 
-.row1 {
+.jpButton {
     background-color: #E59728;
     font-size: 2vw;
     padding: 2vw 4vw;
@@ -33,11 +33,7 @@ body {
     text-align: center
 }
 
-.row1:hover {
+.jpButton:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.row1:visited {
-    background-color: #a6a6a6;
 }
 
