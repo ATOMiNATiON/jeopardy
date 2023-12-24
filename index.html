@@ -18,43 +18,24 @@ The main file for the jeopardy based game.
     <!-- title of the game-->
     <h1 id="title">Jeopardy Game</h1>
     <p id="score">Score: 0</p>
-    <hr></hr>
+    <hr alt="Horizontal Line">
 
     <!-- create the 5x6 board -->
-    <div id="jeopardy-board">
-        <!-- 100 points -->
-        <button class="row1" type="button">100</button>
-        <button class="row1" type="button">100</button>
-        <button class="row1" type="button">100</button>
-        <button class="row1" type="button">100</button>
-        <button class="row1" type="button">100</button>
-        <button class="row1" type="button">100</button>
+    <div id="jeopardy-board"></div>
 
-        <!-- 200 points -->
-        <button class="row1" type="button">200</button>
-        <button class="row1" type="button">200</button>
-        <button class="row1" type="button">200</button>
-        <button class="row1" type="button">200</button>
-        <button class="row1" type="button">200</button>
-        <button class="row1" type="button">200</button>
+    <script src="script/jeopardy.js"></script>
+    <script>
+        // Sample data for categories and point values
+        const categories = ['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 6'];
+        const pointValues = [100, 200, 300, 400];
+        const jsonDataPath = 'script/question.json';
 
-        <!-- 300 points -->
-        <button class="row1" type="button">300</button>
-        <button class="row1" type="button">300</button>
-        <button class="row1" type="button">300</button>
-        <button class="row1" type="button">300</button>
-        <button class="row1" type="button">300</button>
-        <button class="row1" type="button">300</button>
+        // Create an instance of JeopardyGame
+        const jeopardyGame = new JeopardyGame(categories, pointValues, jsonDataPath);
 
-        <!-- 400 points -->
-        <button class="row1" type="button">400</button>
-        <button class="row1" type="button">400</button>
-        <button class="row1" type="button">400</button>
-        <button class="row1" type="button">400</button>
-        <button class="row1" type="button">400</button>
-        <button class="row1" type="button">400</button>
-
-    </div>
+        // Call the createButtons method to generate the game board
+        jeopardyGame.createButtons();
+    </script>
 
 </body>
 
